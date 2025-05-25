@@ -1,4 +1,8 @@
+import os
+import sys
+
 import pendulum
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from hooks.custom_postgres_hook import CustomPostgresHook
 
 # Airflow 3.0 부터 아래 경로로 import 합니다.
